@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB05AA881E0D76AC000B2666 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA861E0D76AC000B2666 /* Bolts.framework */; };
+		FB05AA891E0D76AC000B2666 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA871E0D76AC000B2666 /* Parse.framework */; };
+		FB05AA8C1E0D78D7000B2666 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA8B1E0D78D7000B2666 /* libsqlite3.0.tbd */; };
+		FB05AA8E1E0D78F7000B2666 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA8D1E0D78F7000B2666 /* libstdc++.6.0.9.tbd */; };
+		FB05AA901E0D7938000B2666 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */; };
+		FB05AA921E0D794C000B2666 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */; };
+		FB0916351E0DF3FB00AB954F /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0916341E0DF3FB00AB954F /* Promo.swift */; };
 		FBFC389E1E0D395C00690693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC389D1E0D395C00690693 /* AppDelegate.swift */; };
-		FBFC38A01E0D395C00690693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC389F1E0D395C00690693 /* ViewController.swift */; };
 		FBFC38A31E0D395C00690693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFC38A11E0D395C00690693 /* Main.storyboard */; };
 		FBFC38A51E0D395C00690693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFC38A41E0D395C00690693 /* Assets.xcassets */; };
 		FBFC38A81E0D395C00690693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFC38A61E0D395C00690693 /* LaunchScreen.storyboard */; };
+		FBFC38B11E0D3A4500690693 /* PromoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC38B01E0D3A4500690693 /* PromoCell.swift */; };
+		FBFC38B31E0D3A9E00690693 /* PromosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC38B21E0D3A9E00690693 /* PromosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB05AA861E0D76AC000B2666 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FB05AA871E0D76AC000B2666 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FB05AA8B1E0D78D7000B2666 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FB05AA8D1E0D78F7000B2666 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FB0916341E0DF3FB00AB954F /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
 		FBFC389A1E0D395C00690693 /* Promos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFC389D1E0D395C00690693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBFC389F1E0D395C00690693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBFC38A21E0D395C00690693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBFC38A41E0D395C00690693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFC38A71E0D395C00690693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBFC38A91E0D395C00690693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFC38B01E0D3A4500690693 /* PromoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoCell.swift; sourceTree = "<group>"; };
+		FBFC38B21E0D3A9E00690693 /* PromosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB05AA921E0D794C000B2666 /* SystemConfiguration.framework in Frameworks */,
+				FB05AA901E0D7938000B2666 /* AudioToolbox.framework in Frameworks */,
+				FB05AA8E1E0D78F7000B2666 /* libstdc++.6.0.9.tbd in Frameworks */,
+				FB05AA8C1E0D78D7000B2666 /* libsqlite3.0.tbd in Frameworks */,
+				FB05AA891E0D76AC000B2666 /* Parse.framework in Frameworks */,
+				FB05AA881E0D76AC000B2666 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB05AA8A1E0D78D7000B2666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB05AA871E0D76AC000B2666 /* Parse.framework */,
+				FB05AA861E0D76AC000B2666 /* Bolts.framework */,
+				FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */,
+				FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */,
+				FB05AA8D1E0D78F7000B2666 /* libstdc++.6.0.9.tbd */,
+				FB05AA8B1E0D78D7000B2666 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB0916361E0DF41300AB954F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC38B01E0D3A4500690693 /* PromoCell.swift */,
+				FB0916341E0DF3FB00AB954F /* Promo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FBFC38911E0D395C00690693 = {
 			isa = PBXGroup;
 			children = (
 				FBFC389C1E0D395C00690693 /* Promos */,
 				FBFC389B1E0D395C00690693 /* Products */,
+				FB05AA8A1E0D78D7000B2666 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +100,22 @@
 			isa = PBXGroup;
 			children = (
 				FBFC389D1E0D395C00690693 /* AppDelegate.swift */,
-				FBFC389F1E0D395C00690693 /* ViewController.swift */,
+				FBFC38B21E0D3A9E00690693 /* PromosTableViewController.swift */,
 				FBFC38A11E0D395C00690693 /* Main.storyboard */,
+				FB0916361E0DF41300AB954F /* Model */,
+				FBFC38AF1E0D39B300690693 /* supporting files */,
+			);
+			path = Promos;
+			sourceTree = "<group>";
+		};
+		FBFC38AF1E0D39B300690693 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				FBFC38A41E0D395C00690693 /* Assets.xcassets */,
 				FBFC38A61E0D395C00690693 /* LaunchScreen.storyboard */,
 				FBFC38A91E0D395C00690693 /* Info.plist */,
 			);
-			path = Promos;
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFC38A01E0D395C00690693 /* ViewController.swift in Sources */,
 				FBFC389E1E0D395C00690693 /* AppDelegate.swift in Sources */,
+				FB0916351E0DF3FB00AB954F /* Promo.swift in Sources */,
+				FBFC38B11E0D3A4500690693 /* PromoCell.swift in Sources */,
+				FBFC38B31E0D3A9E00690693 /* PromosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +316,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68S8NTUH4E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Promos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dopecompamy.Promos;
@@ -273,6 +333,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68S8NTUH4E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Promos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dopecompamy.Promos;
@@ -300,6 +364,7 @@
 				FBFC38AE1E0D395C00690693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
