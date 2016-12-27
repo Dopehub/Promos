@@ -9,34 +9,18 @@
 import UIKit
 import Parse
 
-class PromosTableViewController: UITableViewController {
+class IAMTableViewController: UITableViewController {
 	var promos = [Promo]()
-	@IBOutlet weak var segmentControl: UISegmentedControl!
 	
-	@IBAction func segmentControlChanged(_ sender: UISegmentedControl) {
-		if promos.count != 0 {
-			clearPromos()
-			let segmentTitle = segmentControl.titleForSegment(at: segmentControl.selectedSegmentIndex)
-			queryPromos(whereKey: segmentTitle)
-		}
-		
-		else if promos.count == 0 {
-			let segmentTitle = segmentControl.titleForSegment(at: segmentControl.selectedSegmentIndex)
-			queryPromos(whereKey: segmentTitle)
-		}
-		self.tableView.reloadData()
-		
-	}
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.clearsSelectionOnViewWillAppear = true
-		queryPromos(whereKey : segmentControl.titleForSegment(at: segmentControl.selectedSegmentIndex))
+        queryPromos()
     }
 	
-	func queryPromos(whereKey : String? ){
-		if let valueOfComparison = whereKey {
+	func queryPromos(){
 			let query = PFQuery(className: "Promo")
-			query.whereKey("operateur", equalTo: valueOfComparison)
+			query.whereKey("operateur", equalTo: "iam")
 			query.findObjectsInBackground { (objects, error) in
 				if error == nil {
 					if let retrievedObjects = objects {
@@ -52,11 +36,6 @@ class PromosTableViewController: UITableViewController {
 					}
 				}
 			}
-		}
-	}
-	
-	func clearPromos() {
-		self.promos = []
 	}
 	
 	// MARK: - Table view data source

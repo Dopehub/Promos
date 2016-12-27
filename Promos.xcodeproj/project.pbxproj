@@ -14,12 +14,14 @@
 		FB05AA901E0D7938000B2666 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */; };
 		FB05AA921E0D794C000B2666 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */; };
 		FB0916351E0DF3FB00AB954F /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0916341E0DF3FB00AB954F /* Promo.swift */; };
+		FBC3111A1E129794009A8735 /* IAMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC311181E129794009A8735 /* IAMTableViewController.swift */; };
+		FBC3111B1E129794009A8735 /* InwiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC311191E129794009A8735 /* InwiTableViewController.swift */; };
+		FBC311211E12BD64009A8735 /* myNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC311201E12BD64009A8735 /* myNavigationItem.swift */; };
 		FBFC389E1E0D395C00690693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC389D1E0D395C00690693 /* AppDelegate.swift */; };
 		FBFC38A31E0D395C00690693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFC38A11E0D395C00690693 /* Main.storyboard */; };
 		FBFC38A51E0D395C00690693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFC38A41E0D395C00690693 /* Assets.xcassets */; };
 		FBFC38A81E0D395C00690693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFC38A61E0D395C00690693 /* LaunchScreen.storyboard */; };
 		FBFC38B11E0D3A4500690693 /* PromoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC38B01E0D3A4500690693 /* PromoCell.swift */; };
-		FBFC38B31E0D3A9E00690693 /* PromosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC38B21E0D3A9E00690693 /* PromosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FB0916341E0DF3FB00AB954F /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		FBC311181E129794009A8735 /* IAMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAMTableViewController.swift; sourceTree = "<group>"; };
+		FBC311191E129794009A8735 /* InwiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InwiTableViewController.swift; sourceTree = "<group>"; };
+		FBC311201E12BD64009A8735 /* myNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myNavigationItem.swift; sourceTree = "<group>"; };
 		FBFC389A1E0D395C00690693 /* Promos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFC389D1E0D395C00690693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFC38A21E0D395C00690693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,7 +42,6 @@
 		FBFC38A71E0D395C00690693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBFC38A91E0D395C00690693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBFC38B01E0D3A4500690693 /* PromoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoCell.swift; sourceTree = "<group>"; };
-		FBFC38B21E0D3A9E00690693 /* PromosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		FB0916361E0DF41300AB954F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBC311201E12BD64009A8735 /* myNavigationItem.swift */,
 				FBFC38B01E0D3A4500690693 /* PromoCell.swift */,
 				FB0916341E0DF3FB00AB954F /* Promo.swift */,
 			);
@@ -99,8 +104,9 @@
 		FBFC389C1E0D395C00690693 /* Promos */ = {
 			isa = PBXGroup;
 			children = (
+				FBC311181E129794009A8735 /* IAMTableViewController.swift */,
 				FBFC389D1E0D395C00690693 /* AppDelegate.swift */,
-				FBFC38B21E0D3A9E00690693 /* PromosTableViewController.swift */,
+				FBC311191E129794009A8735 /* InwiTableViewController.swift */,
 				FBFC38A11E0D395C00690693 /* Main.storyboard */,
 				FB0916361E0DF41300AB954F /* Model */,
 				FBFC38AF1E0D39B300690693 /* supporting files */,
@@ -191,10 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC311211E12BD64009A8735 /* myNavigationItem.swift in Sources */,
 				FBFC389E1E0D395C00690693 /* AppDelegate.swift in Sources */,
 				FB0916351E0DF3FB00AB954F /* Promo.swift in Sources */,
+				FBC3111B1E129794009A8735 /* InwiTableViewController.swift in Sources */,
 				FBFC38B11E0D3A4500690693 /* PromoCell.swift in Sources */,
-				FBFC38B31E0D3A9E00690693 /* PromosTableViewController.swift in Sources */,
+				FBC3111A1E129794009A8735 /* IAMTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
