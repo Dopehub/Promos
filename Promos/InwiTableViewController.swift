@@ -10,14 +10,26 @@ import UIKit
 import Parse
 
 class InwiTableViewController: UITableViewController {
-	var promos = [Promo]()
+    var promos = [Promo](){
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    var refresher : UIRefreshControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.clearsSelectionOnViewWillAppear = true
         queryPromos()
+        self.clearsSelectionOnViewWillAppear = true
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: #selector(InwiTableViewController.queryPromos), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refresher)
+        
     }
     
     func queryPromos(){
+        clearPreviousPromos()
         let query = PFQuery(className: "Promo")
         query.whereKey("operateur", equalTo: "inwi")
         query.findObjectsInBackground { (objects, error) in
@@ -30,11 +42,13 @@ class InwiTableViewController: UITableViewController {
                             pOperateur: retrievedObject.object(forKey: "operateur") as? String
                         )
                         self.promos.append(promo)
-                        self.tableView.reloadData()
+                        self.refresher.endRefreshing()
+                        
                     }
                 }
             }
         }
+        //tableView.reloadData()
     }
 	
 	
@@ -55,6 +69,11 @@ class InwiTableViewController: UITableViewController {
 			cell?.promoOperateurCellLabel.text = promos[indexPath.row].operateur
 			cell?.promoTypeCellLabel.text = promos[indexPath.row].promoType
         return cell!
+    }
+   
+    func clearPreviousPromos(){
+        
+        self.promos = []
     }
 
     /*

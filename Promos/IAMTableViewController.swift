@@ -10,15 +10,25 @@ import UIKit
 import Parse
 
 class IAMTableViewController: UITableViewController {
-	var promos = [Promo]()
+    var promos = [Promo]() {
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    var refresher : UIRefreshControl!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		self.clearsSelectionOnViewWillAppear = true
         queryPromos()
+        self.clearsSelectionOnViewWillAppear = true
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: #selector(IAMTableViewController.queryPromos), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refresher)
     }
 	
 	func queryPromos(){
+            clearPreviousPromos()
 			let query = PFQuery(className: "Promo")
 			query.whereKey("operateur", equalTo: "iam")
 			query.findObjectsInBackground { (objects, error) in
@@ -31,11 +41,12 @@ class IAMTableViewController: UITableViewController {
 								pOperateur: retrievedObject.object(forKey: "operateur") as? String
 							)
 							self.promos.append(promo)
-							self.tableView.reloadData()
+                            self.refresher.endRefreshing()
 						}
 					}
 				}
 			}
+       // tableView.reloadData()
 	}
 	
 	// MARK: - Table view data source
@@ -55,6 +66,11 @@ class IAMTableViewController: UITableViewController {
 			cell?.promoOperateurCellLabel.text = promos[indexPath.row].operateur
 			cell?.promoTypeCellLabel.text = promos[indexPath.row].promoType
         return cell!
+    }
+    
+    func clearPreviousPromos(){
+        
+        self.promos = []
     }
 
     /*

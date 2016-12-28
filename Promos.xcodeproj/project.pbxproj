@@ -104,8 +104,8 @@
 		FBFC389C1E0D395C00690693 /* Promos */ = {
 			isa = PBXGroup;
 			children = (
-				FBC311181E129794009A8735 /* IAMTableViewController.swift */,
 				FBFC389D1E0D395C00690693 /* AppDelegate.swift */,
+				FBC311181E129794009A8735 /* IAMTableViewController.swift */,
 				FBC311191E129794009A8735 /* InwiTableViewController.swift */,
 				FBFC38A11E0D395C00690693 /* Main.storyboard */,
 				FB0916361E0DF41300AB954F /* Model */,

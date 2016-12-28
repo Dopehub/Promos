@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Promos IAM-->
         <scene sceneID="24h-2s-Wp8">
             <objects>
                 <tableViewController id="v1d-PH-hB3" customClass="IAMTableViewController" customModule="Promos" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                             <outlet property="delegate" destination="v1d-PH-hB3" id="QiK-V8-8VX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5mF-uP-V4p" customClass="myNavigationItem" customModule="Promos" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" title="Promos IAM" id="5mF-uP-V4p" customClass="myNavigationItem" customModule="Promos" customModuleProvider="target"/>
                     <connections>
                         <outlet property="navigationItem" destination="5mF-uP-V4p" id="xNd-7Z-gG9"/>
                     </connections>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="197.59999999999999" y="-68.815592203898049"/>
         </scene>
-        <!--Inwi Table View Controller-->
+        <!--Promos Inwi-->
         <scene sceneID="64k-IE-c8u">
             <objects>
                 <tableViewController id="DFC-oe-bfh" customClass="InwiTableViewController" customModule="Promos" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,7 +249,7 @@
                             <outlet property="delegate" destination="DFC-oe-bfh" id="JcQ-to-6ha"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="atO-uU-WbE"/>
+                    <navigationItem key="navigationItem" title="Promos Inwi" id="atO-uU-WbE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLl-4D-st5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
