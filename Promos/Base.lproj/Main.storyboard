@@ -99,6 +99,7 @@
                                     <outlet property="promoTypeCellLabel" destination="SK9-yR-IOA" id="gEu-ZB-KLO"/>
                                     <outlet property="promoValableCellLabel" destination="EfP-vI-PFu" id="n8d-AO-379"/>
                                     <outlet property="promocellImageView" destination="dS3-qz-ScF" id="Q5A-GL-2wp"/>
+                                    <segue destination="Rn4-iG-2hI" kind="show" identifier="showDetailedPromo" id="rve-Sw-rPb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -115,6 +116,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUt-hh-LFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1924" y="-516.79160419790105"/>
+        </scene>
+        <!--Detailed Promo View Controller-->
+        <scene sceneID="5ri-mx-KeT">
+            <objects>
+                <viewController storyboardIdentifier="detailPromoIamViewController" id="Rn4-iG-2hI" customClass="DetailedPromoViewController" customModule="Promos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LfP-qy-sJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0n-FL-eCY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7R7-Xv-eaq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsq-Dq-hJJ">
+                                <rect key="frame" x="94" y="101" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-FO-bpd">
+                                <rect key="frame" x="94" y="204" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gU-8E-W1l">
+                                <rect key="frame" x="94" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailPromoLabel" destination="nsq-Dq-hJJ" id="GUC-uf-w78"/>
+                        <outlet property="detailPromoPriceLabel" destination="7gU-8E-W1l" id="kyL-ZN-P9p"/>
+                        <outlet property="detailPromoTypeLabel" destination="ltx-FO-bpd" id="NdR-zJ-I3g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0nU-IV-aWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785" y="-516"/>
         </scene>
         <!--IAM-->
         <scene sceneID="8Dz-E1-Q4f">

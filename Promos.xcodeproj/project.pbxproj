@@ -14,6 +14,7 @@
 		FB05AA901E0D7938000B2666 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */; };
 		FB05AA921E0D794C000B2666 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */; };
 		FB0916351E0DF3FB00AB954F /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0916341E0DF3FB00AB954F /* Promo.swift */; };
+		FB2965111E1E91FF003D1469 /* DetailedPromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2965101E1E91FF003D1469 /* DetailedPromoViewController.swift */; };
 		FBC3111A1E129794009A8735 /* IAMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC311181E129794009A8735 /* IAMTableViewController.swift */; };
 		FBC3111B1E129794009A8735 /* InwiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC311191E129794009A8735 /* InwiTableViewController.swift */; };
 		FBC311211E12BD64009A8735 /* myNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC311201E12BD64009A8735 /* myNavigationItem.swift */; };
@@ -32,6 +33,7 @@
 		FB05AA8F1E0D7938000B2666 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FB05AA911E0D794C000B2666 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FB0916341E0DF3FB00AB954F /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		FB2965101E1E91FF003D1469 /* DetailedPromoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedPromoViewController.swift; sourceTree = "<group>"; };
 		FBC311181E129794009A8735 /* IAMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAMTableViewController.swift; sourceTree = "<group>"; };
 		FBC311191E129794009A8735 /* InwiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InwiTableViewController.swift; sourceTree = "<group>"; };
 		FBC311201E12BD64009A8735 /* myNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myNavigationItem.swift; sourceTree = "<group>"; };
@@ -105,9 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				FBFC389D1E0D395C00690693 /* AppDelegate.swift */,
-				FBC311181E129794009A8735 /* IAMTableViewController.swift */,
 				FBC311191E129794009A8735 /* InwiTableViewController.swift */,
+				FBC311181E129794009A8735 /* IAMTableViewController.swift */,
 				FBFC38A11E0D395C00690693 /* Main.storyboard */,
+				FB2965101E1E91FF003D1469 /* DetailedPromoViewController.swift */,
 				FB0916361E0DF41300AB954F /* Model */,
 				FBFC38AF1E0D39B300690693 /* supporting files */,
 			);
@@ -200,6 +203,7 @@
 				FBC311211E12BD64009A8735 /* myNavigationItem.swift in Sources */,
 				FBFC389E1E0D395C00690693 /* AppDelegate.swift in Sources */,
 				FB0916351E0DF3FB00AB954F /* Promo.swift in Sources */,
+				FB2965111E1E91FF003D1469 /* DetailedPromoViewController.swift in Sources */,
 				FBC3111B1E129794009A8735 /* InwiTableViewController.swift in Sources */,
 				FBFC38B11E0D3A4500690693 /* PromoCell.swift in Sources */,
 				FBC3111A1E129794009A8735 /* IAMTableViewController.swift in Sources */,

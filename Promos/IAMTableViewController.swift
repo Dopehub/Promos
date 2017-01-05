@@ -73,13 +73,32 @@ class IAMTableViewController: UITableViewController {
         self.promos = []
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get the new view controller using segue.destinationViewController.
+            let nextViewController : DetailedPromoViewController = segue.destination as! DetailedPromoViewController
+        
         // Pass the selected object to the new view controller.
+        let indexPath : NSIndexPath! = self.tableView.indexPathForSelectedRow as NSIndexPath!
+        let selectedPromo = promos[indexPath.row]
+        nextViewController.promo = selectedPromo
+        
+        
     }
-    */
+    
+//    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+//        
+//    }
+//    
+//    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+//        let peekViewController = storyboard?.instantiateViewController(withIdentifier: "detailPromoIamViewController") as? DetailedPromoViewController
+//            let indexPath : NSIndexPath! = self.tableView.indexPathForSelectedRow as NSIndexPath!
+//            let selectedPromo = promos[indexPath.row]
+//            peekViewController?.promo = selectedPromo
+//        return peekViewController
+//    }
+    
 }

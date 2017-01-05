@@ -25,7 +25,7 @@ class InwiTableViewController: UITableViewController {
         refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refresher.addTarget(self, action: #selector(InwiTableViewController.queryPromos), for: UIControlEvents.valueChanged)
         tableView.addSubview(refresher)
-        
+                
     }
     
     func queryPromos(){
